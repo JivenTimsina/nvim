@@ -7,8 +7,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- Select all
 vim.keymap.set('n', '<C-a>', 'gg0v0G$', {desc = 'select all'})
 
--- Copy to clipboard
+-- Copy and cut to clipboard
 vim.keymap.set('v', '<C-c>', '"+y<CR>',{desc = 'copy to clipboard'})
+vim.keymap.set('v', '<C-x>', '"+d<CR>', {desc = 'cut to clipboard'})
 
 -- jump between splits with CTRL + h,j,k,l
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })

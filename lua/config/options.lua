@@ -50,6 +50,10 @@ vim.o.tabstop=2
 vim.o.softtabstop=2
 vim.o.shiftwidth=2
 
+-- remove ~ after the text line ends
+vim.opt.fillchars:append({ eob = " " })
+
+
 -- lsp error
 vim.diagnostic.config({
   virtual_lines = {
