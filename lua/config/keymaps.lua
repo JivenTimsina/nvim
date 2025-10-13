@@ -29,3 +29,13 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', {desc = 'toggle nvim tre
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+
+-- Move through wrapped lines if wrapping is enabled
+vim.keymap.set('n', 'j', function()
+  return (vim.v.count == 0 and vim.wo.wrap) and 'gj' or 'j'
+end, { expr = true, silent = true })
+
+vim.keymap.set('n', 'k', function()
+  return (vim.v.count == 0 and vim.wo.wrap) and 'gk' or 'k'
+end, { expr = true, silent = true })
+
