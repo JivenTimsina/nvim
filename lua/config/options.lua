@@ -10,7 +10,7 @@ vim.o.relativenumber = true
 
 vim.o.mouse = "a"
 
-vim.o.wrap = false
+vim.o.wrap = true
 
 -- rounded border for floating windows
 vim.opt.winborder = 'rounded'
