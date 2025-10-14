@@ -46,11 +46,11 @@ return {
       }),
       window = {
         completion = cmp.config.window.bordered({
-          max_height = 12,  -- limit items visible at once
-          min_width = 20,
+          max_height = 13,  -- limit items visible at once
+          min_width = 21,
         }),
-        documentation = cmp.config.window.bordered(),
-      },
+				documentation = false,
+		},
       experimental = {
         ghost_text = true,  -- inline preview
       },
