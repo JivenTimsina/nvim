@@ -30,6 +30,9 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 
+-- Typst Preview
+vim.keymap.set('n', '<C-t>', ':TypstPreview<CR>', {desc = 'typst preview', silent = true})
+
 -- Move through wrapped lines if wrapping is enabled
 vim.keymap.set('n', 'j', function()
   return (vim.v.count == 0 and vim.wo.wrap) and 'gj' or 'j'
