@@ -25,11 +25,6 @@ vim.keymap.set('n', '<S-h>', ':bprevious<CR>', {desc = 'switch to next buffer', 
 -- nvim tree
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', {desc = 'toggle nvim tree', silent = true})
 
--- Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-
 -- Typst Preview
 vim.keymap.set('n', '<C-t>', ':TypstPreview<CR>', {desc = 'typst preview', silent = true})
 

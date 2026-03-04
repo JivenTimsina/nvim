@@ -37,10 +37,7 @@ return {
       options = {
         component_separators = '',
         section_separators = '',
-        theme = {
-          normal = { c = { fg = colors.fg, bg = colors.bg } },
-          inactive = { c = { fg = colors.fg, bg = colors.bg } },
-        },
+        theme = 'nord',
         always_divide_middle = false,
       },
       sections = { lualine_a = {}, lualine_b = {}, lualine_c = {}, lualine_x = {}, lualine_y = {}, lualine_z = {} },
