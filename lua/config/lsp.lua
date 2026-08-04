@@ -1,2 +1,2 @@
 -- Enable lsp servers
-vim.lsp.enable({'clangd', 'luals', 'html', 'cssls', 'ts_ls', 'bashls', 'tinymist', 'gopls', 'pyright'})
+vim.lsp.enable({'clangd', 'lua_ls', 'html', 'cssls', 'bashls', 'tinymist', 'gopls', 'pyright', 'tsgo'})
