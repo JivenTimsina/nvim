@@ -32,6 +32,25 @@ return{ s("Add",
         i(2, ""),
         i(3, ""),
         i(4, ""),
-    })
+    })),
+
+ s("doc",
+    fmt([[
+#set page(
+	paper: "a4",
+	margin: 1in,
 )
+
+#set text(
+	font: "Times New Roman",
+	size: 14pt,
+	lang: "en",
+)
+
+#set par(
+	justify: true,
+	leading: 1em,
+)
+]],
+{}))
 }
